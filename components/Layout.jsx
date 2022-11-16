@@ -10,7 +10,6 @@ const Layout = ( { children } ) =>
     <div>
       <Header />
       <Navbar />
-      <Statistic />
       <main className='w-[95vw] flex flex-col m-auto'>
         {children}
       </main>
