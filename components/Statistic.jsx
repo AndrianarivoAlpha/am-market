@@ -43,9 +43,9 @@ const Statistic = () =>
 
   return (
     <div>
-      <div className='text-gray-500 bg-white flex sm:flex-wrap items-center xs:hidden gap-2 justify-between border-gray-200 '>
+      <div className='my-1 text-gray-500 bg-blue-200 py-5 flex xs:hidden gap-2 justify-between border-gray-200 w-[200]'>
         { isFetched &&
-          <div className="flex text-xs font-semibold gap-2">
+          <div className="flex xs:flex-col text-xs font-semibold gap-2 justify-center m-auto">
             <div className="flex gap-2">
               <p>New</p>
               {

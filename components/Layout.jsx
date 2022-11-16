@@ -9,7 +9,8 @@ const Layout = ( { children } ) =>
   return (
     <div>
       <Header />
-      <Navbar  />
+      <Navbar />
+      <Statistic />
       <main className='w-[95vw] flex flex-col m-auto'>
         {children}
       </main>

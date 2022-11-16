@@ -16,7 +16,6 @@ const Navbar = () =>
             <Image height={30} width={30} src={ Logo } className="mr-3" alt="Logo" />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">A&M Market</span>
           </Link>
-          <Statistic />
         </div>
       </nav>
       <nav className="bg-gray-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
