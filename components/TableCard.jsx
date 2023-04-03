@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs'
 import { formatCurrency, formatNumber } from '../utils/utilsFunctions'
 import MiniGraph from './MiniGraph'
+import Statistic from './Statistic'
 
 const TableCard = ( { coins, offSet, setOffSet, currency, setSearch, fetchCoins } ) =>
 {
@@ -29,10 +30,9 @@ const TableCard = ( { coins, offSet, setOffSet, currency, setSearch, fetchCoins 
   }
 
   return (
-    <div>
-      <h1 className='text-3xl font-bold dark:text-gray-400 mt-5'>Cryptocurrency price list</h1>
-      <p className=''>All cryptocurrencies ranked by market cap.</p>
-
+    <>
+      <Statistic />
+      
       <div className='flex w-full justify-between my-5'>
         <div className='flex gap-2 text-xs'>
           <button type='button' className="inline-flex justify-center items-center py-1 px-2 font-[400] text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
@@ -104,7 +104,7 @@ const TableCard = ( { coins, offSet, setOffSet, currency, setSearch, fetchCoins 
                 </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className='mt-2'>
               {
                 coins && (
                   coins.map( ( coin ) =>
@@ -121,7 +121,7 @@ const TableCard = ( { coins, offSet, setOffSet, currency, setSearch, fetchCoins 
                     const sparkline = coin.sparkline;
 
                     return (
-                      <tr key={ uuid } className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                      <tr key={ uuid } className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 ">
                         <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                           { rank }
                         </th>
@@ -187,7 +187,7 @@ const TableCard = ( { coins, offSet, setOffSet, currency, setSearch, fetchCoins 
           </button>
         </div>
       </div>
-    </div>
+    </>
 
   )
 }
