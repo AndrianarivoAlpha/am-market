@@ -67,7 +67,7 @@ const Statistic = () => {
             </div>
 
             <div className='flex bg-slate-200 p-2 rounded-xl items-center border'>
-              <p>Best :</p>
+              <p>Best </p>
               <div className='flex items-center'>
                 {
                   statsData.bestCoins.map((coin) => (
@@ -91,16 +91,16 @@ const Statistic = () => {
             </div>
 
             <p className='flex flex-col bg-slate-200 p-2 rounded-xl items-start border' >
-              Coins: <span className='text-blue-600 mx-1 font-semibold'> {formatTotalCoins}</span>
+              Coins <span className='text-blue-600 mx-1 font-semibold'> {formatTotalCoins}</span>
             </p>
             <p className='flex flex-col bg-slate-200 p-2 rounded-xl items-start border'>
               24H Trading volume: <span className='text-blue-600 mx-1 font-semibold'> {formatTotal24hVolume}</span>
             </p>
             <p className='flex flex-col bg-slate-200 p-2 rounded-xl items-start border'>
-              Market Cap: <span className='text-blue-600 mx-1 font-semibold'> {formatTotalMarketCap}</span>
+              Market Cap <span className='text-blue-600 mx-1 font-semibold'> {formatTotalMarketCap}</span>
             </p>
             <p className='flex flex-col bg-slate-200 p-2 rounded-xl items-start border'>
-              Bitcoin dominance:<span className='text-blue-600 mx-1 font-semibold'> {formatBtcDominance}%</span>
+              Bitcoin<span className='text-blue-600 mx-1 font-semibold'> {formatBtcDominance}%</span>
             </p>
           </div>
         }
