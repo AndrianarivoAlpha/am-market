@@ -94,7 +94,7 @@ const Statistic = () => {
               Coins <span className='text-blue-600 mx-1 font-semibold'> {formatTotalCoins}</span>
             </p>
             <p className='flex flex-col bg-slate-200 p-2 rounded-xl items-start border'>
-              24H Trading volume: <span className='text-blue-600 mx-1 font-semibold'> {formatTotal24hVolume}</span>
+              24H Volume<span className='text-blue-600 mx-1 font-semibold'> {formatTotal24hVolume}</span>
             </p>
             <p className='flex flex-col bg-slate-200 p-2 rounded-xl items-start border'>
               Market Cap <span className='text-blue-600 mx-1 font-semibold'> {formatTotalMarketCap}</span>
